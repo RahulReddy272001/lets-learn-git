@@ -1,0 +1,70 @@
+
+import React from "react";
+export default class Home extends React.Component{
+
+  render()
+  {
+    return(
+    <div>
+      <h1>
+        Home Component
+      </h1>
+      <h3>
+        Home Component
+      </h3>
+    </div>
+    )
+  }
+}
+
+
+import React from "react"
+export default class Profile extends React.Component{
+ 
+  render(){
+    const red=()=>{
+      alert("hii super hero")
+    }
+    return(
+      <div>
+<h1 onClick={red}>
+Hello bhaiya
+</h1>
+      </div>
+    )
+  }
+}
+
+
+/// in class compont we can use state but not in functional components
+/// in class we can us constructor but not in function
+
+
+
+
+/// class component
+
+import React from "react";
+export default class Profile extends React.Component{
+  constructor()
+  {
+    super()
+  }
+  componentDidMount(){
+    console.warn("called life cycle")
+  }
+
+  render(){
+    
+    return(
+      <div>
+      <h1> 
+        Profile Component
+      </h1>
+    </div>
+    )
+  }
+}
+
+
+
